@@ -1,8 +1,8 @@
 {
     "name":"Console Pretty",
-    "version":"0.2.4",
+    "version":"0.2.5",
     "author":"Abram Adams",
-    "location":"abramadams/ConsolePretty#v0.2.4",
+    "location":"abramadams/ConsolePretty#v0.2.5",
     "homepage":"https://github.com/abramadams/ConsolePretty",
     "documentation":"https://github.com/abramadams/ConsolePretty",
     "repository":{
@@ -21,7 +21,7 @@
     "scripts":{
         "postVersion":"package set location='abramadams/ConsolePretty#v`package version`'",
         "onRelease":"forgebox use abram && publish",
-        "postPublish":"!git push & !git push --tags"
+        "postPublish":"!git push && git push --tags"
     },
     "ignore":[
         "**/.*"
