@@ -1,0 +1,29 @@
+{
+    "name": "Console Pretty",
+    "version": "0.1.0",
+    "author": "Abram Adams",
+    "location": "abramadams/ConsolePretty#v0.1.0",
+    "homepage": "https://github.com/abramadams/ConsolePretty",
+    "documentation": "https://github.com/abramadams/ConsolePretty",
+    "repository": {
+        "type": "git",
+        "URL": "https://github.com/abramadams/ConsolePretty"
+    },
+    "bugs": "https://github.com/abramadams/ConsolePretty/issues",
+    "slug": "ConsolePretty",
+    "shortDescription": "I draw bordered message boxes to the console/",
+    "description": "Simple module to draw bordered message boxes to the console (Supports emoji!!)",
+    "instructions": "Install this module and inject it into your command/task/module CFC.  Then call it like `ConsolePretty.printMessageBox( message )`",
+    "type": "commandbox-modules",
+    "dependencies": {},
+    "devDependencies": {},
+    "installPaths": {},
+    "scripts": {
+        "postVersion": "package set location='abramadams/ConsolePretty#v`package version`'",
+        "onRelease": "forgebox use ortus && publish",
+        "postPublish": "!git push && !git push --tags"
+    },
+    "ignore": [
+        "**/.*"
+    ]
+}
