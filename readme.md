@@ -22,13 +22,13 @@ component {
   property name="ConsolePretty" inject="MessageBox@ConsolePretty;
   
   function run() {
-    ConsolePretty.printMessageBox( "🦄  Welcome to my pretty box  🦄" )
+    ConsolePretty.printMessageBox( ":unicorn_face:  Welcome to my pretty box  :unicorn_face:" )
   }
 }
 ```
 ## Options
 * `message`: String or array of strings to print inside the box.  Word wrapping is on by default.  If an array of strings, each item in the array will be a separate line (hint: even empty strings ).  Can use some emojis (depending on terminal shell support, but mostly these are good: https://gist.github.com/rxaviers/7360908)
-* `border`: Character(s) to use to draw the box.  Defaults to "🔥".  Can be pretty much any printable character supported by your terminal - results may vary.
+* `border`: Character(s) to use to draw the box.  Defaults to ":fire:".  Can be pretty much any printable character supported by your terminal - results may vary.
 * `color`: Color of text inside the box.  Defaults to "white"
 * `borderColor`: Color of border characters.  Defaults to "red"
 * `wordwrap`: If true, will wrap at 80 characters (or whatever `columns` is set to. Defaults to true.
