@@ -33,3 +33,4 @@ component {
 * `borderColor`: Color of border characters.  Defaults to "red"
 * `wordwrap`: If true, will wrap at 80 characters (or whatever `columns` is set to. Defaults to true.
 * `columns`: Number of characters to print before wrapping. Defaults to 80.
+* `textAlign`: Either "left" or "center" to align text. Defaults to "center"
